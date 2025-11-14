@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Bipal Karki</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  />
+
+  <style>
+    .container {
+      width: 90%;
+      margin: auto;
+      max-width: 1200px;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="shadow fixed top-0 left-0 w-full bg-white z-50">
+    <nav class="container py-3 flex justify-between items-center">
+
+      <!-- Logo -->
+      <img
+        class="h-[50px] rounded"
+        src="https://www.travelandleisure.com/thmb/KLPvXakEKLGE5AY2jVyovl3Md1k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/iceland-BEAUTCONT1021-b1aeafa7ac2847a484cbca48d3172b6c.jpg"
+        alt="Logo"
+      />
+
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex gap-8 font-medium text-gray-700">
+        <li><a href="#" class="hover:text-red-500">Home</a></li>
+        <li><a href="#" class="hover:text-red-500">About</a></li>
+        <li><a href="#" class="hover:text-red-500">Services</a></li>
+        <li><a href="#" class="hover:text-red-500">Portfolio</a></li>
+        <li><a href="#" class="hover:text-red-500">Blog</a></li>
+      </ul>
+
+      <!-- Button (Desktop Only) -->
+      <a
+        href="#"
+        class="hidden md:block bg-red-500 text-white px-6 py-2 rounded-3xl hover:bg-red-600 transition"
+      >
+        Get in Touch
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" class="md:hidden text-3xl text-gray-700">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden bg-white border-t text-center py-4 md:hidden">
+      <a href="#" class="block py-2 hover:text-red-500">Home</a>
+      <a href="#" class="block py-2 hover:text-red-500">About</a>
+      <a href="#" class="block py-2 hover:text-red-500">Services</a>
+      <a href="#" class="block py-2 hover:text-red-500">Portfolio</a>
+      <a href="#" class="block py-2 hover:text-red-500">Blog</a>
+      <a href="#" class="block bg-red-500 text-white mx-10 mt-3 py-2 rounded-3xl">Get in Touch</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="pt-[90px]">
+
+    <!-- Hero Section -->
+    <section
+      class="text-white text-center flex flex-col justify-center items-center min-h-screen px-4"
+      style="background-image: url('https://www.travelandleisure.com/thmb/KLPvXakEKLGE5AY2jVyovl3Md1k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/iceland-BEAUTCONT1021-b1aeafa7ac2847a484cbca48d3172b6c.jpg'); background-size: cover; background-position: center;"
+    >
+      <div class="bg-black bg-opacity-60 w-full h-full flex flex-col justify-center items-center p-6">
+        <h1 class="text-[32px] md:text-[42px] font-bold mb-4 leading-tight">
+          I'm <br /><span class="text-red-400">Full Stack Developer</span><br />Bipal Karki
+        </h1>
+
+        <p class="text-[18px] md:text-[20px] max-w-2xl leading-relaxed px-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci porro
+          illum libero rem sunt! Aspernatur quas magni repellendus pariatur omnis.
+        </p>
+      </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="container py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+      
+      <!-- Card Template -->
+      <div class="text-center shadow-lg bg-white p-8 rounded-lg hover:shadow-2xl transition">
+        <h2 class="text-2xl font-semibold mb-3">Hello</h2>
+        <p>Yoooooooooo</p>
+      </div>
+
+      <div class="text-center shadow-lg bg-white p-8 rounded-lg hover:shadow-2xl transition">
+        <h2 class="text-2xl font-semibold mb-3">Hello</h2>
+        <p>Hey I'm fine</p>
+      </div>
+
+      <div class="text-center shadow-lg bg-white p-8 rounded-lg hover:shadow-2xl transition">
+        <h2 class="text-2xl font-semibold mb-3">Hello</h2>
+        <p>Hey I'm fine</p>
+      </div>
+
+      <div class="text-center shadow-lg bg-white p-8 rounded-lg hover:shadow-2xl transition">
+        <h2 class="text-2xl font-semibold mb-3">Hello</h2>
+        <p>Hey I'm fine</p>
+      </div>
+
+      <div class="text-center shadow-lg bg-white p-8 rounded-lg hover:shadow-2xl transition">
+        <h2 class="text-2xl font-semibold mb-3">Hello</h2>
+        <p>Hey I'm fine</p>
+      </div>
+
+      <div class="text-center shadow-lg bg-white p-8 rounded-lg hover:shadow-2xl transition">
+        <h2 class="text-2xl font-semibold mb-3">Hello</h2>
+        <p>Hey I'm fine</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white text-center py-6">
+    <p>&copy; 2025 Bipal Karki. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
